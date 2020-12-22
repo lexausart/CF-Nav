@@ -4,23 +4,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- title -->
+    
     <h1>ComicFighter Navigation</h1>
-    <div class="character">
-        <img alt="Sie Kensou" src="https://i.imgur.com/jgG24Ht.png">
+<!-- Choices -->
+
+<div id="options">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('male')"> Male</button>
+    <button class="btn" onclick="filterSelection('feMale')"> Female</button>
+    <button class="btn" onclick="filterSelection('KOF')"> KOF</button>
+    <button class="btn" onclick="filterSelection('Psycho-Soldier')"> Psycho Soldier</button>
+    </div>
+
+<!-- Characters -->
+<div class="container"></div>
+    <div class="filterC male KOF Psycho-Soldier">
+        <img id="character" alt="Sie Kensou" src="https://i.imgur.com/jgG24Ht.png">
         <br>
         Sie Kensou
     </div>
 
-    <div class="character">
-        <img alt="Athena Asamiya" src="https://i.imgur.com/8hihVPB.png">
+    <div class="filterC feMale KOF Psycho-Soldier">
+        <img  id="character" alt="Athena Asamiya" src="https://i.imgur.com/8hihVPB.png">
         <br>
         Athena Asamiya
     </div>
 
-    <div class="character">
-        <img alt="Chin Gentsai" src="https://i.imgur.com/CEzzxS1.png">
+    <div class="filterC male KOF">
+        <img id="character"  alt="Chin Gentsai" src="https://i.imgur.com/CEzzxS1.png">
         <br>
         Chin Gentsai
     </div>
+
+</div>
+<script src="script.js"></script>
+</body>
 </body>
 </html>

@@ -1,23 +1,27 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
 }
+.container {
+    margin-top: 10px;
+    overflow: hidden;
+  }
 
-img {
+#character {
     width: 100px;
     height: 100px;
-    margin-left: auto;
-    margin-right: auto;}
-.character {
-    align-content:center;
+}
+.filterC {
     border-style:solid;
     border-width: 3px;
-}
-
-div {
     text-align: center;
     width: 100px;
     height: 150x;
-
     font-size: 15px;
     overflow: auto;
+    display: none;
 }
+
+.show {
+    display: block;
+}
+
