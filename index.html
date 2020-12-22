@@ -3,22 +3,41 @@
     <title>ComicFighter Navigation</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- title -->
-    
-    <img class= "header=img" alt="ComicFighter" src="https://i2.wp.com/comicfighter.com/wp-content/uploads/2017/11/comicfighter.png?fit=1440%2C126">
+<hr class="titlehr">   
+    <img class="header-img" alt="ComicFighter" src="https://i2.wp.com/comicfighter.com/wp-content/uploads/2017/11/comicfighter.png?fit=1440%2C126">
+
+<hr class="titlehr">
+<!-- Navigation -->
+<div id="navContainer">
+    <nav class="main-nav">
+        <span id="navBtn">Comics</span>
+        <a class="main-link"  href="">Music</a>
+        <a class="main-link"  href="">News</a>
+        <a class="main-link"  href="">About</a>
+    </nav>
+<hr class="nexthr">
+<br>
+        <div id="navContent">
+           
+                <span class="btn active" onclick="filterSelection('all')"> Show All</span>
+                <span class="btn" onclick="filterSelection('male')"> Male</span>
+                <span class="btn" onclick="filterSelection('feMale')"> Female</span>
+                <span class="btn" onclick="filterSelection('KOF')"> KOF</span>
+                <span class="btn" onclick="filterSelection('Psycho-Soldier')"> Psycho Soldier</span>
+                </div>
+</div>
 <!-- Choices -->
 
-<div id="options">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn" onclick="filterSelection('male')"> Male</button>
-    <button class="btn" onclick="filterSelection('feMale')"> Female</button>
-    <button class="btn" onclick="filterSelection('KOF')"> KOF</button>
-    <button class="btn" onclick="filterSelection('Psycho-Soldier')"> Psycho Soldier</button>
-    </div>
+
 
 <!-- Characters -->
+
 <div class="container"></div>
+
     <div class="filterC male KOF Psycho-Soldier">
         <img id="character" alt="Sie Kensou" src="https://i.imgur.com/jgG24Ht.png">
         <br>
@@ -38,7 +57,9 @@
     </div>
 
 </div>
+
 <script src="script.js"></script>
+
 </body>
 </body>
 </html>

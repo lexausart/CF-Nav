@@ -1,12 +1,39 @@
-.header-img {
-    width: 100%;
-}
-
 body {
     font-family:Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
 }
+
+.titlehr {
+    border-bottom: double 5px;
+}
+
+.nexthr {
+    border-bottom: solid 5px;
+}
+
+.header-img {
+    width: 75vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.btn {
+    padding: 5px;
+    border: 3px solid black;
+    margin: 5px;
+}
+
+.main-nav {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    font-weight: bold;
+}
+
 .container {
-    margin-top: 10px;
+    margin-top: 25px;
     overflow: hidden;
   }
 
@@ -29,3 +56,13 @@ body {
     display: block;
 }
 
+/*for Comic Navigation*/
+
+#navContainer, a:link, a:visited {
+    text-decoration-line: none;
+    color: black;
+}
+  
+  #navContent {
+    display: block;
+  }

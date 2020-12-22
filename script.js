@@ -32,3 +32,8 @@ function CFRemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
+$(function() {
+  $('#navBtn').click(function() {
+    $('#navContent').toggle();
+  }); 
+});
