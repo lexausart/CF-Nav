@@ -2,3 +2,8 @@ img {
     width: 100px;
     height: 100px;
 }
+div {
+    align-content:center;
+    border: 1px;
+    border-color: black;
+}
